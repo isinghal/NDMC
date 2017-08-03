@@ -1,0 +1,56 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     tools:context="com.beastapps.ndmc.HomePage"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/black"
+        android:id="@+id/imageView"
+        android:src="@drawable/delhi" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@id/imageView"
+    android:layout_centerHorizontal="true"
+    android:text="NDMC"
+    android:textColor="#005005"
+    android:textSize="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:gravity="center"
+        android:text="37.54°C"
+        android:textColor="#003300"
+        android:id="@+id/weather"
+        android:background="@drawable/drawbutton"
+
+        android:layout_alignRight="@+id/imageView" />
+</RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"/>
+
+        <!--android:columnWidth="0dp"-->
+
+</LinearLayout>
+</ScrollView>
